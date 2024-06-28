@@ -1,0 +1,324 @@
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('D:\Albert IT\html\Font\2\TTLakes-Medium.eot');
+    src: local('D:\Albert IT\html\Font\2\TT Lakes Medium'), local('TTLakes-Medium'),
+        url('D:\Albert IT\html\Font\2\TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+        url('D:\Albert IT\html\Font\2\TTLakes-Medium.woff') format('woff'),
+        url('D:\Albert IT\html\Font\2\TTLakes-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+body {
+    padding: 0;
+    font-family: 'TT Lakes';
+    background: rgba(248, 248, 248, 1);
+    margin: 0px;
+}
+
+.page-header {
+    border-top: 1px solid rgba(217, 255, 245, 1);
+    background-color: #fff;
+    width: 320px;
+    height: 79px;
+    margin: 0 auto;
+}
+
+.page-header__title {
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: rgba(126, 126, 130, 1);
+    padding: 16px;
+    margin: 0;
+}
+
+.page-main {
+    margin: 0 auto;
+    margin-top: 16px;
+    width: 320px;
+}
+
+.nav {
+    margin-left: 16px;
+}
+
+.nav__list {
+    width: 304px;
+    overflow-y: scroll;
+    list-style-type: none;
+    display: none;
+    grid-row: 1;
+    margin: 0;
+    padding: 0;
+    gap: 16px;
+}
+
+.nav__link {
+    width: 238px;
+    height: 70px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.inSwiper {
+    /* display: grid; */
+    /* grid-row: 1; */
+    border: 1px solid rgba(234, 234, 234, 1);
+    background-color: #fff;
+    border-radius: 6px;
+    width: 240px;
+    gap: 16px;
+}
+
+.nav__item {
+    display: grid;
+    grid-row: 1;
+    border: 1px solid rgba(234, 234, 234, 1);
+    background-color: #fff;
+    border-radius: 6px;
+}
+
+/* .image-slider .swiper-pagination-bullet {
+    width: ;
+} */
+
+.nav-swiper {
+    height: 138px;
+}
+
+.nav__item:hover {
+    border: 1px solid #B8FFEC;
+}
+
+.go {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 16px;
+    margin-left: auto;
+}
+
+.lenovo {
+    width: 108px;
+    height: 32px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 16px;
+    margin-right: 44px;
+}
+
+.samsung {
+    margin-top: 17px;
+    margin-bottom: 16.48px;
+    margin-left: 16px;
+    margin-right: 36px;
+}
+
+.apple {
+    margin-top: 12px;
+    margin-bottom: 16px;
+    margin-left: 16px;
+    margin-right: 108px;
+}
+
+.viewsonic {
+    margin-top: 26px;
+    margin-bottom: 25px;
+    margin-left: 14px;
+    margin-right: 42px;
+}
+
+.bosch {
+    margin-top: 21.7px;
+    margin-bottom: 21.7px;
+    margin-left: 16px;
+    margin-right: 40px;
+}
+
+.hp {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 122px;
+}
+
+.acer {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: 16px;
+    margin-right: 74px;
+}
+
+.sony {
+    margin-top: 23px;
+    margin-bottom: 23.4px;
+    margin-left: 14px;
+    margin-right: 42px;
+}
+
+.main-button {
+    margin-top: 24px;
+    margin-left: 31px;
+    display: none;
+    width: 133px;
+    height: 24px;
+}
+
+.main-button:hover {
+    border: 1px solid #B8FFEC;
+    width: 131px;
+    height: 22px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.button-two {
+    margin-left: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Lakes-Medium.wof';
+    font-weight: 500;
+    background-color: transparent;
+    color: rgba(27, 28, 33, 1);
+    border: none;
+    gap: 0;
+    padding: 0;
+}
+
+.button--open {
+    display: flex;
+}
+
+.button-hide {
+    display: none;
+}
+
+.mySwiper__swiper-pagination {
+    position: static;
+}
+
+.mySwiper__swiper-wrapper {
+    margin-bottom: 8px;
+}
+
+
+@media (min-width: 768px) {
+    .nav-swiper {
+        display: none;
+    }
+
+    .nav__list {
+        width: 720px;
+        gap: 16px 24px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        overflow: hidden;
+        max-height: 160px;
+    }
+
+    .main-button {
+        display: flex;
+    }
+
+    .nav {
+        width: 720px;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    .page-header {
+        width: 768px;
+        height: 56px;
+    }
+
+    .nav__item {
+        width: 222px;
+    }
+
+    .page-main {
+        height: 208px;
+        width: 768px;
+    }
+
+
+    .bosch {
+        margin-right: 24px;
+    }
+
+    .hp {
+        margin-right: 106px;
+    }
+
+    .acer {
+        margin-right: 58px;
+    }
+
+    .nav__link {
+        width: 222px;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .button--open {
+        max-height: 254px;
+    }
+
+    .nav__item:nth-child(4) {
+        order: 6;
+    }
+}
+
+.swiper-pagination-bullet-active {
+    background: rgba(181, 182, 188, 1);
+}
+
+.swiper-pagination-bullet {
+    background: rgba(221, 221, 221, 1);
+}
+
+@media (min-width: 1121px) {
+    .swiper {
+        display: none;
+    }
+
+    .page-main {
+        width: 1121px;
+    }
+
+    .nav__list {
+        width: 1057px;
+        gap: 16px 32px;
+    }
+
+    .nav {
+        width: 1057px;
+        margin-left: 32px;
+        margin-right: 33px;
+    }
+
+    .page-header {
+        width: 1121px;
+    }
+
+    .nav__item {
+        width: 238px;
+    }
+
+    .nav__link {
+        width: 238px;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .button--open {
+        display: flex;
+    }
+
+    .nav__item:nth-child(4) {
+        order: 0;
+    }
+}
