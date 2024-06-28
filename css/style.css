@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'TT Lakes';
-    src: url('D:\Albert IT\html\Font\2\TTLakes-Medium.eot');
-    src: local('D:\Albert IT\html\Font\2\TT Lakes Medium'), local('TTLakes-Medium'),
-        url('D:\Albert IT\html\Font\2\TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
-        url('D:\Albert IT\html\Font\2\TTLakes-Medium.woff') format('woff'),
-        url('D:\Albert IT\html\Font\2\TTLakes-Medium.ttf') format('truetype');
+    src: url('fonts\TTLakes-Medium.eot');
+    src: local('fonts\TT Lakes Medium'), local('TTLakes-Medium'),
+        url('fonts\TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts\TTLakes-Medium.woff') format('woff'),
+        url('fonts\TTLakes-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
