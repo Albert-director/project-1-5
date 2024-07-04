@@ -13,7 +13,7 @@ const createSwiper  = () => {
 let swiper = null;
 
 function createSSS (){
-  if (this.innerWidth>500) {
+  if (window.innerWidth>500) {
       if (swiper) {
           swiper.destroy();
           swiper = null;
@@ -22,7 +22,7 @@ function createSSS (){
       if (!swiper) swiper = createSwiper();
   }
 }
-
+createSSS()
 window.addEventListener('resize', createSSS);
 
 let button = document.querySelector('.button-two');
