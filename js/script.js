@@ -1,39 +1,44 @@
-let button = document.querySelector('.button-two');
-let nav = document.querySelectorAll('.nav__list');
+const createSwiper  = () => {
+  return new Swiper('.swiper', {
+      direction:'horizontal',
+      loop: true,
+      spaceBetween: 16,
+      slidesPerView: 1.35,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+} 
 
+let swiper = null;
+
+function createSSS (){
+  if (this.innerWidth>500) {
+      if (swiper) {
+          swiper.destroy();
+          swiper = null;
+      }
+  } else {
+      if (!swiper) swiper = createSwiper();
+  }
+}
+
+window.addEventListener('resize', createSSS);
+
+let button = document.querySelector('.button-two');
+let nav = document.querySelectorAll('.swiper-wrapper');
+let img = document.querySelector('.img-button');
 
 button.addEventListener("click", function(evt){
     for (let i=0; i<nav.length; i++){
         nav[i].classList.toggle('button--open');
+        img.classList.toggle('img__rotate');
         if (nav[0].classList.contains('button--open')) {
             button.textContent = 'Скрыть';
+            
           } else {
             button.textContent = 'Показать все';
+            
         }
-    }
-})
-
-
-const swiper = new Swiper('.mySwiper', {
-
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
-    // And if we need scrollbar
-    // scrollbar: {
-    //   el: '.swiper-scrollbar',
-    // },
-    mousehell: true,
-    Keyboard: true,
-    slidesPerView: 2,
-    spaceBetween: 220,
-  });
+    };
+});

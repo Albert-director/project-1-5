@@ -15,23 +15,19 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <title>Верстка блока. JavaScript в браузере</title>
-
+        <script defer src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
   </head>
 
   <body>
-    <header class="page-header">
-      <h1 class="page-header__title">Ремонт различных брендов</h1>
-    </header>
+    <section class="page-section">
+      <h3 class="title">Ремонт различных брендов</h3>
 
-    <main class="page-main">
-      <nav class="main__nav nav">
-        <div class="nav-swiper">
           <div class="swiper mySwiper">
-            <div class="swiper-wrapper mySwiper__swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="inSwiper">
-                  <a class="nav__link" href="#">
+            <ul class="swiper-wrapper mySwiper__swiper-wrapper">
+              <li class="swiper-slide cards">
+                  <a class="swiper__link" href="#">
                     <img
                       class="lenovo"
                       src="assets/svg_input/lenovo.svg"
@@ -39,11 +35,9 @@
                     />
                     <img class="go" src="assets/svg_input/go.svg" />
                   </a>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="inSwiper">
-                  <a class="nav__link" href="#">
+              </li>
+              <li class="swiper-slide cards">
+                  <a class="swiper__link" href="#">
                     <img
                       class="samsung"
                       src="assets/svg_input/samsung.svg"
@@ -51,11 +45,9 @@
                     />
                     <img class="go" src="assets/svg_input/go.svg" />
                   </a>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="inSwiper">
-                  <a class="nav__link" href="#">
+              </li>
+              <li class="swiper-slide cards">
+                  <a class="swiper__link" href="#">
                     <img
                       class="apple"
                       src="assets/svg_input/apple.svg"
@@ -63,11 +55,9 @@
                     />
                     <img class="go" src="assets/svg_input/go.svg" />
                   </a>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="inSwiper">
-                  <a class="nav__link" href="#">
+              </li>
+              <li class="swiper-slide cards">
+                  <a class="swiper__link" href="#">
                     <img
                       class="viewsonic"
                       src="assets/svg_input/viewsonic.svg"
@@ -75,11 +65,9 @@
                     />
                     <img class="go" src="assets/svg_input/go.svg" />
                   </a>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="inSwiper">
-                  <a class="nav__link" href="#">
+              </li>
+              <li class="swiper-slide cards">
+                  <a class="swiper__link" href="#">
                     <img
                       class="bosch"
                       src="assets/svg_input/bosch.svg"
@@ -87,19 +75,15 @@
                     />
                     <img class="go" src="assets/svg_input/go.svg" />
                   </a>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="inSwiper">
-                  <a class="nav__link" href="#">
+              </li>
+              <li class="swiper-slide cards">
+                  <a class="swiper__link" href="#">
                     <img class="hp" src="assets/svg_input/hp.svg" alt="hp" />
                     <img class="go" src="assets/svg_input/go.svg" />
                   </a>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="inSwiper">
-                  <a class="nav__link" href="#">
+              </li>
+              <li class="swiper-slide cards">
+                  <a class="swiper__link" href="#">
                     <img
                       class="acer"
                       src="assets/svg_input/acer.svg"
@@ -107,11 +91,9 @@
                     />
                     <img class="go" src="assets/svg_input/go.svg" />
                   </a>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="inSwiper">
-                  <a class="nav__link" href="#">
+              </li>
+              <li class="swiper-slide cards">
+                  <a class="swiper__link" href="#">
                     <img
                       class="sony"
                       src="assets/svg_input/sony.svg"
@@ -119,11 +101,9 @@
                     />
                     <img class="go" src="assets/svg_input/go.svg" />
                   </a>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="inSwiper">
-                  <a class="nav__link" href="#">
+              </li>
+              <li class="swiper-slide cards">
+                  <a class="swiper__link" href="#">
                     <img
                       class="lenovo"
                       src="assets/svg_input/lenovo.svg"
@@ -131,118 +111,16 @@
                     />
                     <img class="go" src="assets/svg_input/go.svg" />
                   </a>
-                </div>
-              </div>
-            </div>
+              </li>
+            </ul>
             <div class="swiper-pagination mySwiper__swiper-pagination"></div>
           </div>
-        </div>
 
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link" href="#">
-              <img
-                class="lenovo"
-                src="assets/svg_input/lenovo.svg"
-                alt="lenovo"
-              />
-              <img class="go" src="assets/svg_input/go.svg" />
-            </a>
-          </li>
 
-          <li class="nav__item">
-            <a class="nav__link" href="#">
-              <img
-                class="samsung"
-                src="assets/svg_input/samsung.svg"
-                alt="samsung"
-              />
-              <img class="go" src="assets/svg_input/go.svg" />
-            </a>
-          </li>
-
-          <li class="nav__item">
-            <a class="nav__link" href="#">
-              <img class="apple" src="assets/svg_input/apple.svg" alt="apple" />
-              <img class="go" src="assets/svg_input/go.svg" />
-            </a>
-          </li>
-
-          <li class="nav__item">
-            <a class="nav__link" href="#">
-              <img
-                class="viewsonic"
-                src="assets/svg_input/viewsonic.svg"
-                alt="viewsonic"
-              />
-              <img class="go" src="assets/svg_input/go.svg" />
-            </a>
-          </li>
-
-          <li class="nav__item">
-            <a class="nav__link" href="#">
-              <img class="bosch" src="assets/svg_input/bosch.svg" alt="bosch" />
-              <img class="go" src="assets/svg_input/go.svg" />
-            </a>
-          </li>
-
-          <li class="nav__item">
-            <a class="nav__link" href="#">
-              <img class="hp" src="assets/svg_input/hp.svg" alt="hp" />
-              <img class="go" src="assets/svg_input/go.svg" />
-            </a>
-          </li>
-
-          <li class="nav__item">
-            <a class="nav__link" href="#">
-              <img class="acer" src="assets/svg_input/acer.svg" alt="acer" />
-              <img class="go" src="assets/svg_input/go.svg" />
-            </a>
-          </li>
-
-          <li class="nav__item">
-            <a class="nav__link" href="#">
-              <img class="sony" src="assets/svg_input/sony.svg" alt="sony" />
-              <img class="go" src="assets/svg_input/go.svg" />
-            </a>
-          </li>
-
-          <li class="nav__item">
-            <a class="nav__link" href="#">
-              <img
-                class="lenovo"
-                src="assets/svg_input/lenovo.svg"
-                alt="lenovo"
-              />
-              <img class="go" src="assets/svg_input/go.svg" />
-            </a>
-          </li>
-
-          <li class="nav__item">
-            <a class="nav__link" href="#">
-              <img
-                class="samsung"
-                src="assets/svg_input/samsung.svg"
-                alt="samsung"
-              />
-              <img class="go" src="assets/svg_input/go.svg" />
-            </a>
-          </li>
-
-          <li class="nav__item">
-            <a class="nav__link" href="#">
-              <img class="apple" src="assets/svg_input/apple.svg" alt="apple" />
-              <img class="go" src="assets/svg_input/go.svg" />
-            </a>
-          </li>
-        </ul>
-      </nav>
       <div class="main-button">
-        <img src="assets/svg_input/expand.svg" />
+        <img class='img-button' src="assets/svg_input/expand.svg" />
         <button class="button-two">Показать все</button>
       </div>
-    </main>
-
-    <script src="js/script.js"></script>
+    </section>
   </body>
 </html>
